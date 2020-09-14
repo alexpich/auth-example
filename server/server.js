@@ -5,6 +5,14 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const app = express();
 const router = require("./router");
+const mongoose = require("mongoose");
+
+// DB Setup
+// mongoose.connect("mongodb://localhost/auth");
+mongoose.connect("mongodb://localhost:auth/auth-example", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 // App Setup - Get express working
 app.use(morgan("combined"));
