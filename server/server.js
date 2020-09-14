@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 
 // DB Setup
 // mongoose.connect("mongodb://localhost/auth");
-mongoose.connect("mongodb://localhost:auth/auth-example", {
+mongoose.connect("mongodb://localhost:27017/auth-example", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
